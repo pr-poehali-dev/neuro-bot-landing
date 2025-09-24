@@ -23,6 +23,7 @@ const Index = () => {
               <a href="#audience" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Для кого</a>
               <a href="#howto" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Как начать</a>
               <a href="#reviews" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Отзывы</a>
+              <a href="#faq" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">FAQ</a>
               <Button 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
@@ -75,6 +76,13 @@ const Index = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Отзывы
+              </a>
+              <a 
+                href="#faq" 
+                className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                FAQ
               </a>
               <Button 
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
@@ -422,13 +430,69 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl font-bold text-gray-800 mb-4">
+              ❓ Часто задаваемые вопросы (FAQ)
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-4">
+            {[
+              {
+                question: "Нужна ли оплата для использования?",
+                answer: "Базовые функции — бесплатны. Премиум-режим доступен по подписке, но не обязателен."
+              },
+              {
+                question: "Можно ли использовать сгенерированный контент в коммерческих целях?",
+                answer: "Да, вы получаете полные права на созданный контент."
+              },
+              {
+                question: "Поддерживает ли бот русский язык?",
+                answer: "Полностью. Также доступны английский, украинский и другие языки."
+              },
+              {
+                question: "Насколько уникальны тексты?",
+                answer: "Все тексты генерируются с нуля и проходят внутреннюю проверку на уникальность (>95%)."
+              },
+              {
+                question: "Что делать, если результат не понравился?",
+                answer: "Просто уточните запрос или попросите перегенерировать — бот адаптируется под вашу обратную связь."
+              }
+            ].map((faq, index) => (
+              <Card key={index} className="bg-white border-0 shadow-md hover:shadow-lg transition-all duration-300">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <h3 className="font-semibold text-lg text-gray-800 pr-4">
+                      {faq.question}
+                    </h3>
+                    <Icon 
+                      name="ChevronDown" 
+                      size={20} 
+                      className="text-gray-500 group-open:rotate-180 transition-transform duration-300 flex-shrink-0"
+                    />
+                  </summary>
+                  <div className="px-6 pb-6">
+                    <p className="text-gray-600 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </details>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Future Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
-            <h3 className="font-heading text-4xl font-bold mb-8">
+            <h2 className="font-heading text-4xl font-bold mb-8">
               🚀 Будущее уже здесь
-            </h3>
+            </h2>
             <p className="text-xl mb-8 opacity-90 leading-relaxed">
               Искусственный интеллект перестал быть фантастикой. Он стал повседневным инструментом, как смартфон или ноутбук. Антошка Бот — это не просто «ещё один бот», а персональный ИИ-ассистент, который растёт вместе с вами, учится вашему стилю и помогает достигать целей быстрее.
             </p>
