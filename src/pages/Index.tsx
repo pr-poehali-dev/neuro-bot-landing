@@ -1,10 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 
 export default function Index() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    const elements = document.querySelectorAll('.scroll-animate');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -23,7 +41,7 @@ export default function Index() {
               <a href="#howto" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Как начать</a>
               <a href="#seo" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">SEO</a>
               <Button 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full animate-pulse-glow"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
@@ -93,7 +111,7 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 animate-gradient">
         <div className="container mx-auto px-6 py-24">
           <div className="animate-fade-in max-w-6xl mx-auto">
             <h1 className="font-heading text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
@@ -130,12 +148,16 @@ export default function Index() {
             </div>
           </div>
         </div>
+        
+        {/* Decorative gradient orbs */}
+        <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-pink-400 to-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
       </section>
 
       {/* Features Section */}
       <section id="features" className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="font-heading text-4xl font-bold text-gray-800 mb-16 text-center">
+          <h2 className="scroll-animate font-heading text-4xl font-bold text-gray-800 mb-16 text-center">
             💡 Почему именно Антошка Бот?
           </h2>
 
