@@ -523,7 +523,7 @@ export default function Index() {
                     <p className="text-gray-300 text-lg leading-relaxed mb-6">
                       Персональный нейросетевой ассистент прямо в Telegram. Создавайте тексты, изображения и видео одной командой. Бесплатно и без ограничений.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div>
                       <Button 
                         size="lg"
                         className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
@@ -531,15 +531,6 @@ export default function Index() {
                       >
                         <Icon name="MessageCircle" className="mr-2" size={20} />
                         Начать использовать
-                      </Button>
-                      <Button 
-                        variant="outline"
-                        size="lg"
-                        className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-full transition-all duration-300"
-                        onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}
-                      >
-                        <Icon name="Users" className="mr-2" size={20} />
-                        Сообщество
                       </Button>
                     </div>
                   </div>
