@@ -40,6 +40,8 @@ export default function Index() {
               <a href="#audience" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Для кого</a>
               <a href="#howto" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Как начать</a>
               <a href="#seo" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">SEO</a>
+              <a href="#testimonials" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Отзывы</a>
+              <a href="#faq" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">FAQ</a>
               <Button 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full animate-pulse-glow"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
@@ -503,7 +505,7 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 scroll-animate">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -616,7 +618,7 @@ export default function Index() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 scroll-animate">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
