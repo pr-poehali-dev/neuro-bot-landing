@@ -441,7 +441,7 @@ const Index = () => {
               onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
             >
               <Icon name="MessageCircle" className="mr-3" size={24} />
-              Начать использовать @iimoi_bot
+              Начать использовать Антошкабот
             </Button>
           </div>
         </div>
