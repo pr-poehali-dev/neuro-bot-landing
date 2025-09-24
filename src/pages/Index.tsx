@@ -638,7 +638,7 @@ export default function Index() {
                 
                 <div className="text-center sm:text-right">
                   <p className="text-gray-400 text-sm mb-1">Создано с ❤️ для автоматизации творчества</p>
-                  <p className="text-gray-500 text-xs">© 2024 Антошкабот.рф. Все права защищены.</p>
+                  <p className="text-gray-500 text-xs">© 2025 Антошкабот.рф. Все права защищены.</p>
                 </div>
               </div>
             </div>
