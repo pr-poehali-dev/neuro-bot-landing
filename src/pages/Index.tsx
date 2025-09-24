@@ -5,8 +5,38 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-200/50 shadow-sm">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <span className="font-heading text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                🤖 Антошкабот.рф
+              </span>
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#features" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Возможности</a>
+              <a href="#audience" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Для кого</a>
+              <a href="#howto" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Как начать</a>
+              <a href="#reviews" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Отзывы</a>
+              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full">
+                <Icon name="MessageCircle" className="mr-2" size={16} />
+                @AntoshkaBot
+              </Button>
+            </div>
+
+            <div className="md:hidden">
+              <Button variant="ghost" size="sm">
+                <Icon name="Menu" size={24} />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16">
         <div className="container mx-auto px-6 py-24 text-center">
           <div className="animate-fade-in">
             <h1 className="font-heading text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -45,7 +75,7 @@ const Index = () => {
       </section>
 
       {/* Why Antoshka Section */}
-      <section className="py-24 bg-white">
+      <section id="features" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
@@ -139,7 +169,7 @@ const Index = () => {
       </section>
 
       {/* Target Audience Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
+      <section id="audience" className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-heading text-4xl font-bold mb-4">
@@ -201,7 +231,7 @@ const Index = () => {
       </section>
 
       {/* How to Start Section */}
-      <section className="py-24 bg-gray-50">
+      <section id="howto" className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
@@ -279,7 +309,7 @@ const Index = () => {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-24 bg-white">
+      <section id="reviews" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
