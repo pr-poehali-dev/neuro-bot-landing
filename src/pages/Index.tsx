@@ -615,6 +615,141 @@ export default function Index() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 scroll-animate">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Часто задаваемые вопросы
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Ответы на самые популярные вопросы о работе с Антошкаботом
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              
+              {/* FAQ Item 1 */}
+              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                      <Icon name="HelpCircle" size={18} className="text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      Нужна ли оплата для использования?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Базовые функции — бесплатны. Премиум-режим доступен по подписке, но не обязателен.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* FAQ Item 2 */}
+              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                      <Icon name="Briefcase" size={18} className="text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      Можно ли использовать сгенерированный контент в коммерческих целях?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Да, вы получаете полные права на созданный контент.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* FAQ Item 3 */}
+              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center">
+                      <Icon name="Globe" size={18} className="text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      Поддерживает ли бот русский язык?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Полностью. Также доступны английский, украинский и другие языки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* FAQ Item 4 */}
+              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                      <Icon name="FileCheck" size={18} className="text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      Насколько уникальны тексты?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Все тексты генерируются с нуля и проходят внутреннюю проверку на уникальность (>95%).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* FAQ Item 5 */}
+              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <Icon name="RefreshCw" size={18} className="text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      Что делать, если результат не понравился?
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Просто уточните запрос или попросите перегенерировать — бот адаптируется под вашу обратную связь.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="text-center mt-16 scroll-animate">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-12">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                Остались вопросы?
+              </h3>
+              <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+                Напишите боту напрямую — он ответит на любые ваши вопросы и поможет начать работу
+              </p>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+                onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+              >
+                <Icon name="MessageCircle" className="mr-3" size={24} />
+                Задать вопрос боту
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="relative overflow-hidden">
         {/* Decorative background */}
