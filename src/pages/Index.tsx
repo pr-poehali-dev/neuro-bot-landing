@@ -23,7 +23,10 @@ const Index = () => {
               <a href="#audience" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Для кого</a>
               <a href="#howto" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Как начать</a>
               <a href="#reviews" className="text-gray-700 hover:text-purple-600 font-medium transition-colors">Отзывы</a>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full">
+              <Button 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
+                onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+              >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
                 @AntoshkaBot
               </Button>
@@ -75,7 +78,10 @@ const Index = () => {
               </a>
               <Button 
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  window.open('https://t.me/iimoi_bot', '_blank');
+                }}
               >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
                 @AntoshkaBot
@@ -100,7 +106,11 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float"
+                onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+              >
                 <Icon name="MessageCircle" className="mr-2" />
                 @AntoshkaBot
               </Button>
@@ -428,6 +438,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-white text-purple-600 hover:bg-gray-100 px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
             >
               <Icon name="MessageCircle" className="mr-3" size={24} />
               Начать использовать @AntoshkaBot
