@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Navigation */}
@@ -27,12 +30,59 @@ const Index = () => {
             </div>
 
             <div className="md:hidden">
-              <Button variant="ghost" size="sm">
-                <Icon name="Menu" size={24} />
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
               </Button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white/95 backdrop-blur-lg border-b border-gray-200/50">
+            <div className="px-6 py-4 space-y-4">
+              <a 
+                href="#features" 
+                className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Возможности
+              </a>
+              <a 
+                href="#audience" 
+                className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Для кого
+              </a>
+              <a 
+                href="#howto" 
+                className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Как начать
+              </a>
+              <a 
+                href="#reviews" 
+                className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Отзывы
+              </a>
+              <Button 
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Icon name="MessageCircle" className="mr-2" size={16} />
+                @AntoshkaBot
+              </Button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
