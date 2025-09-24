@@ -502,6 +502,119 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 scroll-animate">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Отзывы пользователей
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Тысячи людей уже используют Антошкабот для решения творческих задач
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Testimonial 1 */}
+            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  М
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Мария</div>
+                  <div className="text-purple-600 text-sm font-medium">SMM-менеджер</div>
+                </div>
+              </div>
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 text-lg leading-relaxed italic">
+                «Раньше тратил часы на написание постов. Теперь Антошка делает это за 2 минуты — и тексты даже лучше моих!»
+              </p>
+            </Card>
+
+            {/* Testimonial 2 */}
+            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  А
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Алексей</div>
+                  <div className="text-purple-600 text-sm font-medium">Блогер</div>
+                </div>
+              </div>
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 text-lg leading-relaxed italic">
+                «Сгенерировал обложку для YouTube-видео по описанию "космос и кофе". Получилось шедеврально!»
+              </p>
+            </Card>
+
+            {/* Testimonial 3 */}
+            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-red-500"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                  И
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Игорь</div>
+                  <div className="text-purple-600 text-sm font-medium">Предприниматель</div>
+                </div>
+              </div>
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" size={16} className="text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-gray-700 text-lg leading-relaxed italic">
+                «Использую бота для создания описаний товаров в Wildberries. Продажи выросли на 30% за месяц!»
+              </p>
+            </Card>
+          </div>
+
+          {/* Statistics */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 scroll-animate">
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">5000+</div>
+              <p className="text-gray-600 font-medium">Довольных пользователей</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">4.9</div>
+              <p className="text-gray-600 font-medium">Средняя оценка</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">100K+</div>
+              <p className="text-gray-600 font-medium">Запросов в день</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent mb-2">99%</div>
+              <p className="text-gray-600 font-medium">Время работы</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12 scroll-animate">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+              onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+            >
+              <Icon name="MessageCircle" className="mr-3" size={24} />
+              Присоединиться к довольным пользователям
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="relative overflow-hidden">
         {/* Decorative background */}
