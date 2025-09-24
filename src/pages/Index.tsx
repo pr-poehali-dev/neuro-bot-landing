@@ -633,14 +633,7 @@ export default function Index() {
                   >
                     <Icon name="MessageCircle" size={20} />
                   </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-gray-300 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all duration-300"
-                    onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}
-                  >
-                    <Icon name="Users" size={20} />
-                  </Button>
+
                 </div>
                 
                 <div className="text-center sm:text-right">
