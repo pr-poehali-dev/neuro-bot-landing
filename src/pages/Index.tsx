@@ -28,7 +28,7 @@ const Index = () => {
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
-                @iimoi_bot
+                Антошкабот
               </Button>
             </div>
 
