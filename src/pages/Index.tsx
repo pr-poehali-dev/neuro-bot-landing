@@ -112,7 +112,7 @@ const Index = () => {
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
                 <Icon name="MessageCircle" className="mr-2" />
-                @iimoi_bot
+                Антошкабот
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-4 text-lg font-medium rounded-full transition-all duration-300">
                 Посмотреть примеры
