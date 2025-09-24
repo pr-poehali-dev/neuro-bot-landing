@@ -503,31 +503,158 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-gray-900 text-white">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <div className="font-heading text-2xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                🤖 Антошкабот.рф
+      <footer className="relative overflow-hidden">
+        {/* Decorative background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="7" cy="7" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <div className="relative">
+          {/* Main Footer Content */}
+          <div className="py-16 text-white">
+            <div className="container mx-auto px-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                {/* Brand Section */}
+                <div className="lg:col-span-2">
+                  <div className="mb-6">
+                    <div className="font-heading text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                      🤖 Антошкабот.рф
+                    </div>
+                    <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                      Персональный нейросетевой ассистент прямо в Telegram. Создавайте тексты, изображения и видео одной командой. Бесплатно и без ограничений.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button 
+                        size="lg"
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+                        onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+                      >
+                        <Icon name="MessageCircle" className="mr-2" size={20} />
+                        Начать использовать
+                      </Button>
+                      <Button 
+                        variant="outline"
+                        size="lg"
+                        className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-full transition-all duration-300"
+                        onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}
+                      >
+                        <Icon name="Users" className="mr-2" size={20} />
+                        Сообщество
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Navigation Links */}
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-6 relative">
+                    Навигация
+                    <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                  </h4>
+                  <ul className="space-y-3">
+                    <li><a href="#features" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group">
+                      <Icon name="ChevronRight" size={16} className="mr-2 transform group-hover:translate-x-1 transition-transform" />
+                      Возможности
+                    </a></li>
+                    <li><a href="#audience" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group">
+                      <Icon name="ChevronRight" size={16} className="mr-2 transform group-hover:translate-x-1 transition-transform" />
+                      Для кого
+                    </a></li>
+                    <li><a href="#howto" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group">
+                      <Icon name="ChevronRight" size={16} className="mr-2 transform group-hover:translate-x-1 transition-transform" />
+                      Как начать
+                    </a></li>
+                    <li><a href="#seo" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group">
+                      <Icon name="ChevronRight" size={16} className="mr-2 transform group-hover:translate-x-1 transition-transform" />
+                      SEO и продвижение
+                    </a></li>
+                  </ul>
+                </div>
+
+                {/* Features */}
+                <div>
+                  <h4 className="font-semibold text-white text-lg mb-6 relative">
+                    Возможности
+                    <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
+                  </h4>
+                  <ul className="space-y-3">
+                    <li className="text-gray-300 flex items-center">
+                      <Icon name="FileText" size={16} className="mr-3 text-blue-400" />
+                      Генерация текстов
+                    </li>
+                    <li className="text-gray-300 flex items-center">
+                      <Icon name="Image" size={16} className="mr-3 text-purple-400" />
+                      Создание изображений
+                    </li>
+                    <li className="text-gray-300 flex items-center">
+                      <Icon name="Video" size={16} className="mr-3 text-pink-400" />
+                      Монтаж видео
+                    </li>
+                    <li className="text-gray-300 flex items-center">
+                      <Icon name="Zap" size={16} className="mr-3 text-yellow-400" />
+                      Мгновенные результаты
+                    </li>
+                    <li className="text-gray-300 flex items-center">
+                      <Icon name="Shield" size={16} className="mr-3 text-green-400" />
+                      Безопасность данных
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <p className="text-gray-400">
-                Персональный нейросетевой ассистент в Telegram
-              </p>
-            </div>
-            <div className="flex space-x-6">
-              <Button
-                variant="ghost"
-                className="text-gray-400 hover:text-white"
-                onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
-              >
-                <Icon name="MessageCircle" className="mr-2" size={16} />
-                Telegram
-              </Button>
+
+              {/* Stats Section */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-y border-white/10">
+                <div className="text-center">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">∞</div>
+                  <p className="text-gray-300 text-sm">Бесплатных запросов</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">24/7</div>
+                  <p className="text-gray-300 text-sm">Работает без перерывов</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent mb-2">3</div>
+                  <p className="text-gray-300 text-sm">Типа контента</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-2">≤5с</div>
+                  <p className="text-gray-300 text-sm">Время генерации</p>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex flex-col sm:flex-row items-center justify-between pt-8">
+                <div className="flex items-center space-x-6 mb-6 sm:mb-0">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-gray-300 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all duration-300"
+                    onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
+                  >
+                    <Icon name="MessageCircle" size={20} />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-gray-300 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all duration-300"
+                    onClick={() => window.open('https://t.me/+QgiLIa1gFRY4Y2Iy', '_blank')}
+                  >
+                    <Icon name="Users" size={20} />
+                  </Button>
+                </div>
+                
+                <div className="text-center sm:text-right">
+                  <p className="text-gray-400 text-sm mb-1">Создано с ❤️ для автоматизации творчества</p>
+                  <p className="text-gray-500 text-xs">© 2024 Антошкабот.рф. Все права защищены.</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-            © 2024 Антошкабот.рф. Все права защищены.
-          </div>
+
+          {/* Decorative elements */}
+          <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-float"></div>
+          <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-10 left-1/3 w-16 h-16 bg-gradient-to-r from-pink-400/20 to-red-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '2s'}}></div>
         </div>
       </footer>
     </div>
