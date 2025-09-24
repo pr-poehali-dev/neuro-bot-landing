@@ -28,7 +28,7 @@ const Index = () => {
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
-                @AntoshkaBot
+                @iimoi_bot
               </Button>
             </div>
 
@@ -84,7 +84,7 @@ const Index = () => {
                 }}
               >
                 <Icon name="MessageCircle" className="mr-2" size={16} />
-                @AntoshkaBot
+                @iimoi_bot
               </Button>
             </div>
           </div>
@@ -112,7 +112,7 @@ const Index = () => {
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
                 <Icon name="MessageCircle" className="mr-2" />
-                @AntoshkaBot
+                @iimoi_bot
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-4 text-lg font-medium rounded-full transition-all duration-300">
                 Посмотреть примеры
@@ -312,7 +312,7 @@ const Index = () => {
               },
               {
                 step: "2", 
-                title: "Найдите @AntoshkaBot",
+                title: "Найдите @iimoi_bot",
                 description: "Введите в поиске имя бота и выберите его",
                 icon: "Search"
               },
@@ -441,7 +441,7 @@ const Index = () => {
               onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
             >
               <Icon name="MessageCircle" className="mr-3" size={24} />
-              Начать использовать @AntoshkaBot
+              Начать использовать @iimoi_bot
             </Button>
           </div>
         </div>
@@ -463,7 +463,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
               <div className="flex items-center space-x-4">
                 <Icon name="MessageCircle" size={24} className="text-blue-400" />
-                <span className="text-gray-300">@AntoshkaBot</span>
+                <span className="text-gray-300">@iimoi_bot</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Icon name="Shield" size={24} className="text-green-400" />
