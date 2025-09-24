@@ -98,9 +98,9 @@ const Index = () => {
             <h1 className="font-heading text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               🤖 Антошкабот.рф
             </h1>
-            <h2 className="font-heading text-4xl font-semibold mb-8 text-gray-800">
+            <p className="font-heading text-4xl font-semibold mb-8 text-gray-800">
               Ваш персональный нейросетевой ассистент прямо в Telegram
-            </h2>
+            </p>
             <p className="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
               В эпоху искусственного интеллекта каждый стремится автоматизировать рутинные задачи, ускорить рабочие процессы и получать качественный контент без лишних усилий. Антошка Бот — ваш умный нейросетевой помощник, доступный прямо в Telegram.
             </p>
@@ -138,9 +138,9 @@ const Index = () => {
       <section id="features" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="font-heading text-4xl font-bold text-gray-800 mb-4">
               💡 Почему именно Антошка Бот?
-            </h3>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Этот бот — не просто очередной чат-бот. Это полноценная нейросеть в Telegram, способная генерировать тексты, изображения и даже видео по вашему запросу.
             </p>
@@ -154,9 +154,9 @@ const Index = () => {
                     <Icon name="Smartphone" size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-heading text-xl font-semibold text-gray-800 mb-2">
+                    <h3 className="font-heading text-xl font-semibold text-gray-800 mb-2">
                       1. Полная интеграция в Telegram
-                    </h4>
+                    </h3>
                     <p className="text-gray-600">
                       Никаких лишних действий. Достаточно найти бота в Telegram, начать диалог — и вы уже создаёте контент. Никаких паролей, email'ов, SMS-подтверждений.
                     </p>
@@ -170,9 +170,9 @@ const Index = () => {
                     <Icon name="FileText" size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-heading text-xl font-semibold text-gray-800 mb-2">
+                    <h3 className="font-heading text-xl font-semibold text-gray-800 mb-2">
                       2. Генерация текста любого типа и стиля
-                    </h4>
+                    </h3>
                     <p className="text-gray-600">
                       От официального до дружелюбного тона, SEO-тексты с естественным вхождением ключевых слов, переписывание и расширение контента.
                     </p>
@@ -188,9 +188,9 @@ const Index = () => {
                     <Icon name="Image" size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-heading text-xl font-semibold text-gray-800 mb-2">
+                    <h3 className="font-heading text-xl font-semibold text-gray-800 mb-2">
                       3. Создание изображений
-                    </h4>
+                    </h3>
                     <p className="text-gray-600">
                       Обложки для постов, иллюстрации к статьям, концепт-арт для проекта, фоны для презентаций — всё по текстовому описанию.
                     </p>
@@ -204,9 +204,9 @@ const Index = () => {
                     <Icon name="Video" size={24} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="font-heading text-xl font-semibold text-gray-800 mb-2">
+                    <h3 className="font-heading text-xl font-semibold text-gray-800 mb-2">
                       4. Генерация видео
-                    </h4>
+                    </h3>
                     <p className="text-gray-600">
                       Превращайте идеи в короткие динамичные ролики — идеально для Reels, TikTok или сторис. Видео с озвучкой, анимацией и музыкой.
                     </p>
@@ -218,9 +218,9 @@ const Index = () => {
 
           <div className="text-center bg-gradient-to-r from-yellow-50 to-orange-50 p-12 rounded-3xl">
             <div className="text-6xl mb-4">🆓</div>
-            <h4 className="font-heading text-3xl font-bold text-gray-800 mb-4">
+            <h3 className="font-heading text-3xl font-bold text-gray-800 mb-4">
               5. Бесплатно и без ограничений
-            </h4>
+            </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Антошка даёт вам бесплатный доступ к базовым функциям. Генерируйте тексты, изображения и короткие видео без оплаты — идеально для тестирования и повседневного использования.
             </p>
@@ -232,9 +232,9 @@ const Index = () => {
       <section id="audience" className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-heading text-4xl font-bold mb-4">
+            <h2 className="font-heading text-4xl font-bold mb-4">
               🎯 Для кого создан Антошка Бот?
-            </h3>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -278,9 +278,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Icon name={audience.icon} size={28} className="text-white" />
                 </div>
-                <h4 className="font-heading text-xl font-semibold mb-4">
+                <h3 className="font-heading text-xl font-semibold mb-4">
                   {audience.title}
-                </h4>
+                </h3>
                 <p className="opacity-90 leading-relaxed">
                   {audience.description}
                 </p>
@@ -294,9 +294,9 @@ const Index = () => {
       <section id="howto" className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="font-heading text-4xl font-bold text-gray-800 mb-4">
               🛠 Как начать работать с Антошкой?
-            </h3>
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Интерфейс интуитивно понятен даже новичкам. Все функции доступны через простые текстовые команды.
             </p>
@@ -372,9 +372,9 @@ const Index = () => {
       <section id="reviews" className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-heading text-4xl font-bold text-gray-800 mb-4">
+            <h2 className="font-heading text-4xl font-bold text-gray-800 mb-4">
               💬 Отзывы пользователей
-            </h3>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
