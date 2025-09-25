@@ -25,7 +25,7 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden max-w-full">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-6">
@@ -113,8 +113,8 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 animate-gradient">
-        <div className="container mx-auto px-4 sm:px-6 py-24 max-w-full">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 animate-gradient w-full">
+        <div className="container mx-auto px-4 sm:px-6 py-24 max-w-full w-full">
           <div className="animate-fade-in max-w-6xl mx-auto">
             <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
               🤖 Антошка Бот: ваш персональный нейросетевой ассистент прямо в Telegram
@@ -159,8 +159,8 @@ export default function Index() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section id="features" className="py-24 bg-white w-full overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 max-w-full w-full">
           <h2 className="scroll-animate font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-16 text-center">
             💡 Почему именно Антошка Бот?
           </h2>
