@@ -267,7 +267,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Icon name="PenTool" size={28} className="text-white" />
+                <Icon name="Edit3" size={32} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold mb-4 text-center">
                 ✍️ Копирайтеры и контент-мейкеры
@@ -279,7 +279,7 @@ export default function Index() {
 
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Icon name="Smartphone" size={28} className="text-white" />
+                <Icon name="Smartphone" size={32} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold mb-4 text-center">
                 📱 Блогеры и SMM-специалисты
@@ -291,7 +291,7 @@ export default function Index() {
 
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Icon name="Building2" size={28} className="text-white" />
+                <Icon name="Building2" size={32} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold mb-4 text-center">
                 🏢 Предприниматели и владельцы бизнеса
@@ -303,7 +303,7 @@ export default function Index() {
 
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Icon name="GraduationCap" size={28} className="text-white" />
+                <Icon name="GraduationCap" size={32} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold mb-4 text-center">
                 🎓 Студенты и преподаватели
@@ -315,7 +315,7 @@ export default function Index() {
 
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Icon name="Brain" size={28} className="text-white" />
+                <Icon name="Sparkles" size={32} className="text-white" />
               </div>
               <h3 className="font-heading text-xl font-semibold mb-4 text-center">
                 🧠 Любители экспериментов с ИИ
