@@ -141,12 +141,14 @@ export default function Index() {
               </Button>
             </div>
 
-            <div className="animate-slide-up text-center px-6 sm:px-4">
-              <img 
-                src="img/8883f4b6-9150-4d1e-b176-1d746e7ddc03.jpg" 
-                alt="Антошка Бот" 
-                className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
-              />
+            <div className="animate-slide-up text-center">
+              <div className="mx-auto max-w-[280px] sm:max-w-sm md:max-w-md px-4">
+                <img 
+                  src="img/8883f4b6-9150-4d1e-b176-1d746e7ddc03.jpg" 
+                  alt="Антошка Бот" 
+                  className="w-full rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </div>
           </div>
         </div>
