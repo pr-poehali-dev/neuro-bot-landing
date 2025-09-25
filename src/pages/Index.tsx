@@ -264,7 +264,7 @@ export default function Index() {
             🎯 Для кого создан Антошка Бот?
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="Edit3" size={32} className="text-white" />
@@ -322,6 +322,18 @@ export default function Index() {
               </h3>
               <p className="opacity-90 leading-relaxed text-center">
                 Хотите поиграть с генерацией арта, написать сценарий для короткометражки или создать персонажа для игры? Антошка — ваш цифровой соавтор.
+              </p>
+            </Card>
+
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Icon name="Users" size={32} className="text-white" />
+              </div>
+              <h3 className="font-heading text-xl font-semibold mb-4 text-center">
+                👥 Команды и агентства
+              </h3>
+              <p className="opacity-90 leading-relaxed text-center">
+                Масштабируйте производство контента для клиентов. Быстрое создание макетов, черновиков и идей для дальнейшей проработки специалистами.
               </p>
             </Card>
           </div>
