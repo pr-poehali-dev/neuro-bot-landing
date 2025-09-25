@@ -247,7 +247,7 @@ export default function Index() {
             <div className="text-center bg-gradient-to-r from-indigo-50 to-cyan-50 p-6 sm:p-12 rounded-3xl">
               <div className="text-6xl mb-4">🆓</div>
               <h3 className="font-heading text-3xl font-bold text-gray-800 mb-4">
-                5. Бесплатно и без ограничений (на старте)
+                5. Бесплатная нейросеть в Telegram без ограничений
               </h3>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto">
                 Многие сервисы сразу предлагают платную подписку. Антошка же даёт вам бесплатный доступ к базовым функциям. Вы можете генерировать тексты, изображения и даже короткие видео без оплаты — идеально для тестирования и повседневного использования. При необходимости доступны премиум-функции, но даже в бесплатной версии бот остаётся мощным инструментом.
@@ -374,7 +374,7 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 sm:mb-8">
-              🔒 Конфиденциальность и безопасность
+              🔒 Безопасность данных в Telegram боте с ИИ
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               Мы понимаем, насколько важна приватность. Антошка не хранит ваши запросы дольше необходимого времени для обработки. Все данные шифруются, а генерация происходит на защищённых серверах. Вы полностью владеете созданным контентом — его можно свободно использовать в коммерческих целях.
@@ -447,7 +447,7 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">
-              🚀 Будущее уже здесь
+              🚀 Будущее нейросетевых ботов в Telegram
             </h2>
             
             <div className="text-base sm:text-lg leading-relaxed space-y-4 sm:space-y-6 opacity-90 mb-8 sm:mb-12">
@@ -479,7 +479,7 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-heading text-4xl font-bold text-gray-800 mb-8 text-center">
-              Заключение: ИИ — ваш союзник, а не конкурент
+              Заключение: нейросеть ИИ — ваш союзник в создании контента
             </h2>
             
             <div className="text-base sm:text-lg text-gray-600 leading-relaxed space-y-4 sm:space-y-6 text-center">
