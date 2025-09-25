@@ -28,7 +28,7 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             <div className="font-heading text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               🤖 Антошкабот.рф
@@ -68,7 +68,7 @@ export default function Index() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
-            <div className="container mx-auto px-6 py-4 space-y-4">
+            <div className="container mx-auto px-4 sm:px-6 py-4 space-y-4">
               <a 
                 href="#features" 
                 className="block text-gray-700 hover:text-purple-600 font-medium transition-colors"
@@ -114,13 +114,13 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 animate-gradient">
-        <div className="container mx-auto px-6 py-24">
+        <div className="container mx-auto px-4 sm:px-6 py-24">
           <div className="animate-fade-in max-w-6xl mx-auto">
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
               🤖 Антошка Бот: ваш персональный нейросетевой ассистент прямо в Telegram
             </h1>
             
-            <div className="text-lg md:text-xl text-gray-600 leading-relaxed space-y-6 mb-12">
+            <div className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed space-y-4 sm:space-y-6 mb-8 sm:mb-12">
               <p>
                 В эпоху искусственного интеллекта каждый стремится автоматизировать рутинные задачи, ускорить рабочие процессы и получать качественный контент без лишних усилий. Но где найти надёжный, простой и бесплатный инструмент, который не требует установки программ, регистрации на сомнительных сайтах или изучения сложных интерфейсов? Ответ — Антошка Бот, ваш умный нейросетевой помощник, доступный прямо в Telegram.
               </p>
@@ -141,41 +141,41 @@ export default function Index() {
               </Button>
             </div>
 
-            <div className="animate-slide-up text-center">
+            <div className="animate-slide-up text-center px-4">
               <img 
                 src="img/8883f4b6-9150-4d1e-b176-1d746e7ddc03.jpg" 
                 alt="Антошка Бот" 
-                className="mx-auto max-w-md rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                className="mx-auto w-full max-w-sm sm:max-w-md rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
         </div>
         
         {/* Decorative gradient orbs */}
-        <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-pink-400 to-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="hidden md:block absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
+        <div className="hidden md:block absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-pink-400 to-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style={{animationDelay: '2s'}}></div>
       </section>
 
       {/* Features Section */}
       <section id="features" className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="scroll-animate font-heading text-4xl font-bold text-gray-800 mb-16 text-center">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="scroll-animate font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-16 text-center">
             💡 Почему именно Антошка Бот?
           </h2>
 
           <div className="max-w-6xl mx-auto space-y-16">
             {/* Feature 1 */}
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-3xl">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 sm:p-8 rounded-3xl">
               <h3 className="font-heading text-2xl font-semibold text-gray-800 mb-4">
                 1. Полная интеграция в Telegram — никаких лишних действий
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Большинство нейросетевых сервисов требуют открытия браузера, авторизации, оплаты подписки или даже установки приложений. С Антошкой всё иначе. Достаточно найти бота в Telegram, начать диалог — и вы уже создаёте контент. Никаких паролей, email'ов, SMS-подтверждений. Просто введите команду — и получите результат за секунды.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-3xl">
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 sm:p-8 rounded-3xl">
               <h3 className="font-heading text-2xl font-semibold text-gray-800 mb-4">
                 2. Генерация текста любого типа и стиля
               </h3>
@@ -200,7 +200,7 @@ export default function Index() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-3xl">
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 p-4 sm:p-8 rounded-3xl">
               <h3 className="font-heading text-2xl font-semibold text-gray-800 mb-4">
                 3. Создание изображений по текстовому описанию
               </h3>
@@ -222,7 +222,7 @@ export default function Index() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-gradient-to-r from-orange-50 to-red-50 p-8 rounded-3xl">
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 sm:p-8 rounded-3xl">
               <h3 className="font-heading text-2xl font-semibold text-gray-800 mb-4">
                 4. Генерация видео из текста и изображений
               </h3>
@@ -242,7 +242,7 @@ export default function Index() {
             </div>
 
             {/* Feature 5 */}
-            <div className="text-center bg-gradient-to-r from-indigo-50 to-cyan-50 p-12 rounded-3xl">
+            <div className="text-center bg-gradient-to-r from-indigo-50 to-cyan-50 p-6 sm:p-12 rounded-3xl">
               <div className="text-6xl mb-4">🆓</div>
               <h3 className="font-heading text-3xl font-bold text-gray-800 mb-4">
                 5. Бесплатно и без ограничений (на старте)
@@ -257,13 +257,13 @@ export default function Index() {
 
       {/* Target Audience Section */}
       <section id="audience" className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
-        <div className="container mx-auto px-6">
-          <h2 className="font-heading text-4xl font-bold mb-16 text-center">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-16 text-center">
             🎯 Для кого создан Антошка Бот?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="PenTool" size={28} className="text-white" />
               </div>
@@ -275,7 +275,7 @@ export default function Index() {
               </p>
             </Card>
 
-            <Card className="p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="Smartphone" size={28} className="text-white" />
               </div>
@@ -287,7 +287,7 @@ export default function Index() {
               </p>
             </Card>
 
-            <Card className="p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="Building2" size={28} className="text-white" />
               </div>
@@ -299,7 +299,7 @@ export default function Index() {
               </p>
             </Card>
 
-            <Card className="p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="GraduationCap" size={28} className="text-white" />
               </div>
@@ -311,7 +311,7 @@ export default function Index() {
               </p>
             </Card>
 
-            <Card className="p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
+            <Card className="p-4 sm:p-8 bg-white/10 backdrop-blur-lg border-0 text-white hover:bg-white/20 transition-all duration-300">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Icon name="Brain" size={28} className="text-white" />
               </div>
@@ -328,13 +328,13 @@ export default function Index() {
 
       {/* How to Start Section */}
       <section id="howto" className="py-24 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="font-heading text-4xl font-bold text-gray-800 mb-16 text-center">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 sm:mb-16 text-center">
             🛠 Как начать работать с Антошкой?
           </h2>
 
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-6 text-lg leading-relaxed text-gray-600 mb-12">
+            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-gray-600 mb-8 sm:mb-12">
               <ol className="list-decimal list-inside space-y-4 ml-4">
                 <li>Откройте Telegram.</li>
                 <li>В поиске введите @AntoshkaBot (или название, указанное на вашем сайте).</li>
@@ -344,22 +344,22 @@ export default function Index() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="bg-white p-6 rounded-2xl shadow-md">
+              <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md">
                 <div className="text-blue-600 font-semibold mb-2">📝 Текст:</div>
                 <div className="text-gray-700">«Напиши пост про здоровое питание»</div>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-md">
+              <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md">
                 <div className="text-purple-600 font-semibold mb-2">🎨 Изображение:</div>
                 <div className="text-gray-700">«Создай изображение кофе на рассвете в стиле акварели»</div>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-md">
+              <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-md">
                 <div className="text-pink-600 font-semibold mb-2">🎥 Видео:</div>
                 <div className="text-gray-700">«Сделай видео из этого текста с фоновой музыкой»</div>
               </div>
             </div>
 
             <div className="text-center">
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
                 Получите результат — и используйте его мгновенно! Интерфейс интуитивно понятен даже новичкам. Все функции доступны через простые текстовые команды или меню.
               </p>
             </div>
@@ -369,12 +369,12 @@ export default function Index() {
 
       {/* Privacy Section */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-heading text-4xl font-bold text-gray-800 mb-8">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 sm:mb-8">
               🔒 Конфиденциальность и безопасность
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
               Мы понимаем, насколько важна приватность. Антошка не хранит ваши запросы дольше необходимого времени для обработки. Все данные шифруются, а генерация происходит на защищённых серверах. Вы полностью владеете созданным контентом — его можно свободно использовать в коммерческих целях.
             </p>
           </div>
@@ -383,7 +383,7 @@ export default function Index() {
 
       {/* Comparison Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-heading text-4xl font-bold text-gray-800 mb-8 text-center">
               📈 Почему Антошка выделяется среди других нейроботов?
@@ -414,7 +414,7 @@ export default function Index() {
 
       {/* SEO Section */}
       <section id="seo" className="py-24 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-heading text-4xl font-bold text-gray-800 mb-8 text-center">
               🌐 SEO и нейросети: как Антошка помогает в продвижении
@@ -442,13 +442,13 @@ export default function Index() {
 
       {/* Future Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-heading text-4xl font-bold mb-8 text-center">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">
               🚀 Будущее уже здесь
             </h2>
             
-            <div className="text-lg leading-relaxed space-y-6 opacity-90 mb-12">
+            <div className="text-base sm:text-lg leading-relaxed space-y-4 sm:space-y-6 opacity-90 mb-8 sm:mb-12">
               <p>
                 Искусственный интеллект перестал быть фантастикой. Он стал повседневным инструментом, как смартфон или ноутбук. Антошка Бот — это не просто «ещё один бот», а персональный ИИ-ассистент, который растёт вместе с вами, учится вашему стилю и помогает достигать целей быстрее.
               </p>
@@ -474,18 +474,18 @@ export default function Index() {
 
       {/* Conclusion Section */}
       <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-heading text-4xl font-bold text-gray-800 mb-8 text-center">
               Заключение: ИИ — ваш союзник, а не конкурент
             </h2>
             
-            <div className="text-lg text-gray-600 leading-relaxed space-y-6 text-center">
+            <div className="text-base sm:text-lg text-gray-600 leading-relaxed space-y-4 sm:space-y-6 text-center">
               <p>
                 Многие боятся, что нейросети заменят людей. Но на деле они усиливают наши способности. Антошка Бот — это не замена креативности, а её катализатор. Он берёт на себя техническую часть, чтобы вы могли сосредоточиться на главном — на идеях, стратегии и эмоциях.
               </p>
               
-              <p className="text-xl font-semibold text-gray-800">
+              <p className="text-lg sm:text-xl font-semibold text-gray-800">
                 Попробуйте Антошку сегодня — и вы удивитесь, сколько времени, сил и ресурсов можно сэкономить, имея под рукой умного, быстрого и бесплатного нейросетевого помощника прямо в Telegram.
               </p>
             </div>
@@ -506,7 +506,7 @@ export default function Index() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16 scroll-animate">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Отзывы пользователей
@@ -516,9 +516,9 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-12">
             {/* Testimonial 1 */}
-            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+            <Card className="p-4 sm:p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
@@ -540,7 +540,7 @@ export default function Index() {
             </Card>
 
             {/* Testimonial 2 */}
-            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+            <Card className="p-4 sm:p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
@@ -562,7 +562,7 @@ export default function Index() {
             </Card>
 
             {/* Testimonial 3 */}
-            <Card className="p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
+            <Card className="p-4 sm:p-8 bg-white shadow-lg hover:shadow-2xl transition-all duration-300 scroll-animate border-0 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-red-500"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
@@ -585,22 +585,22 @@ export default function Index() {
           </div>
 
           {/* Statistics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 scroll-animate">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 scroll-animate">
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">5000+</div>
-              <p className="text-gray-600 font-medium">Довольных пользователей</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">5000+</div>
+              <p className="text-gray-600 font-medium text-sm sm:text-base">Довольных пользователей</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">4.9</div>
-              <p className="text-gray-600 font-medium">Средняя оценка</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">4.9</div>
+              <p className="text-gray-600 font-medium text-sm sm:text-base">Средняя оценка</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">100K+</div>
-              <p className="text-gray-600 font-medium">Запросов в день</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">100K+</div>
+              <p className="text-gray-600 font-medium text-sm sm:text-base">Запросов в день</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent mb-2">99%</div>
-              <p className="text-gray-600 font-medium">Время работы</p>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-transparent mb-2">99%</div>
+              <p className="text-gray-600 font-medium text-sm sm:text-base">Время работы</p>
             </div>
           </div>
 
@@ -619,7 +619,7 @@ export default function Index() {
 
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-white">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16 scroll-animate">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Часто задаваемые вопросы
@@ -633,7 +633,7 @@ export default function Index() {
             <div className="space-y-6">
               
               {/* FAQ Item 1 */}
-              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="bg-gray-50 rounded-2xl p-4 sm:p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
@@ -652,7 +652,7 @@ export default function Index() {
               </div>
 
               {/* FAQ Item 2 */}
-              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="bg-gray-50 rounded-2xl p-4 sm:p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
@@ -671,7 +671,7 @@ export default function Index() {
               </div>
 
               {/* FAQ Item 3 */}
-              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="bg-gray-50 rounded-2xl p-4 sm:p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center">
@@ -690,7 +690,7 @@ export default function Index() {
               </div>
 
               {/* FAQ Item 4 */}
-              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="bg-gray-50 rounded-2xl p-4 sm:p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
@@ -709,7 +709,7 @@ export default function Index() {
               </div>
 
               {/* FAQ Item 5 */}
-              <div className="bg-gray-50 rounded-2xl p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
+              <div className="bg-gray-50 rounded-2xl p-4 sm:p-8 scroll-animate hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
@@ -732,11 +732,11 @@ export default function Index() {
 
           {/* CTA Section */}
           <div className="text-center mt-16 scroll-animate">
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-6 sm:p-12">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 Остались вопросы?
               </h3>
-              <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+              <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Напишите боту напрямую — он ответит на любые ваши вопросы и поможет начать работу
               </p>
               <Button 
@@ -761,16 +761,16 @@ export default function Index() {
         <div className="relative">
           {/* Main Footer Content */}
           <div className="py-16 text-white">
-            <div className="container mx-auto px-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div className="container mx-auto px-4 sm:px-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-12 mb-12">
                 
                 {/* Brand Section */}
                 <div className="lg:col-span-2">
                   <div className="mb-6">
-                    <div className="font-heading text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <div className="font-heading text-xl sm:text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                       🤖 Антошкабот.рф
                     </div>
-                    <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                    <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
                       Персональный нейросетевой ассистент прямо в Telegram. Создавайте тексты, изображения и видео одной командой. Бесплатно и без ограничений.
                     </p>
                     <div>
@@ -793,7 +793,7 @@ export default function Index() {
                     <div className="absolute bottom-0 left-0 w-8 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
                   </h4>
                   <ul className="space-y-3">
-                    <li><a href="#features" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group">
+                    <li><a href="#features" className="text-gray-300 hover:text-white transition-colors duration-300 flex items-center group text-sm sm:text-base">
                       <Icon name="ChevronRight" size={16} className="mr-2 transform group-hover:translate-x-1 transition-transform" />
                       Возможности
                     </a></li>
@@ -844,28 +844,28 @@ export default function Index() {
               </div>
 
               {/* Stats Section */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-y border-white/10">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 py-8 sm:py-12 border-y border-white/10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">∞</div>
-                  <p className="text-gray-300 text-sm">Бесплатных запросов</p>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">∞</div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Бесплатных запросов</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">24/7</div>
-                  <p className="text-gray-300 text-sm">Работает без перерывов</p>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">24/7</div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Работает без перерывов</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent mb-2">3</div>
-                  <p className="text-gray-300 text-sm">Типа контента</p>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent mb-2">3</div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Типа контента</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-2">≤5с</div>
-                  <p className="text-gray-300 text-sm">Время генерации</p>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-2">≤5с</div>
+                  <p className="text-gray-300 text-xs sm:text-sm">Время генерации</p>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="flex flex-col sm:flex-row items-center justify-between pt-8">
-                <div className="flex items-center space-x-6 mb-6 sm:mb-0">
+                <div className="flex items-center space-x-4 sm:space-x-6 mb-4 sm:mb-0">
                   <Button
                     variant="ghost"
                     size="sm"
@@ -878,17 +878,17 @@ export default function Index() {
                 </div>
                 
                 <div className="text-center sm:text-right">
-                  <p className="text-gray-400 text-sm mb-1">Создано с ❤️ для автоматизации творчества</p>
+                  <p className="text-gray-400 text-xs sm:text-sm mb-1">Создано с ❤️ для автоматизации творчества</p>
                   <p className="text-gray-500 text-xs">© 2025 Антошкабот.рф. Все права защищены.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Decorative elements */}
-          <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-float"></div>
-          <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-10 left-1/3 w-16 h-16 bg-gradient-to-r from-pink-400/20 to-red-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '2s'}}></div>
+          {/* Decorative elements - hidden on mobile */}
+          <div className="hidden md:block absolute top-10 left-10 w-20 h-20 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-float"></div>
+          <div className="hidden md:block absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
+          <div className="hidden md:block absolute bottom-10 left-1/3 w-16 h-16 bg-gradient-to-r from-pink-400/20 to-red-400/20 rounded-full blur-xl animate-float" style={{animationDelay: '2s'}}></div>
         </div>
       </footer>
     </div>
