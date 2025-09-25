@@ -130,14 +130,14 @@ export default function Index() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 px-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-8 py-4 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
-                <Icon name="MessageCircle" className="mr-2" />
-                Начать использовать Антошкабот
+                <Icon name="MessageCircle" className="mr-2 flex-shrink-0" />
+                <span className="text-center">Начать использовать</span>
               </Button>
             </div>
 
