@@ -460,14 +460,14 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center px-4">
               <Button 
                 size="lg" 
-                className="bg-white text-purple-600 hover:bg-gray-100 px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full sm:w-auto bg-white text-purple-600 hover:bg-gray-100 px-4 sm:px-12 py-4 sm:py-6 text-base sm:text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
-                <Icon name="MessageCircle" className="mr-3" size={24} />
-                Начать использовать Антошкабот
+                <Icon name="MessageCircle" className="mr-2 flex-shrink-0" size={20} />
+                <span className="text-center">Попробовать бота</span>
               </Button>
             </div>
           </div>
@@ -492,14 +492,14 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="text-center mt-12">
+            <div className="text-center mt-12 px-4">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-12 py-4 sm:py-6 text-base sm:text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
-                <Icon name="MessageCircle" className="mr-3" size={24} />
-                Начать использовать Антошкабот
+                <Icon name="MessageCircle" className="mr-2 flex-shrink-0" size={20} />
+                <span className="text-center">Попробовать бота</span>
               </Button>
             </div>
           </div>
