@@ -114,7 +114,7 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pt-16 animate-gradient">
-        <div className="container mx-auto px-4 sm:px-6 py-24">
+        <div className="container mx-auto px-4 sm:px-6 py-24 max-w-full">
           <div className="animate-fade-in max-w-6xl mx-auto">
             <h1 className="font-heading text-3xl sm:text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
               🤖 Антошка Бот: ваш персональный нейросетевой ассистент прямо в Telegram
@@ -141,11 +141,11 @@ export default function Index() {
               </Button>
             </div>
 
-            <div className="animate-slide-up text-center px-4">
+            <div className="animate-slide-up text-center px-6 sm:px-4">
               <img 
                 src="img/8883f4b6-9150-4d1e-b176-1d746e7ddc03.jpg" 
                 alt="Антошка Бот" 
-                className="mx-auto w-full max-w-sm sm:max-w-md rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
