@@ -609,11 +609,11 @@ export default function Index() {
           <div className="text-center mt-12 scroll-animate">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+              className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-12 py-4 sm:py-6 text-base sm:text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
               onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
             >
-              <Icon name="MessageCircle" className="mr-3" size={24} />
-              Присоединиться к довольным пользователям
+              <Icon name="MessageCircle" className="mr-2 flex-shrink-0" size={20} />
+              <span className="text-center">Присоединиться</span>
             </Button>
           </div>
         </div>
@@ -743,11 +743,11 @@ export default function Index() {
               </p>
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-6 text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+                className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-12 py-4 sm:py-6 text-base sm:text-xl font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
                 onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
               >
-                <Icon name="MessageCircle" className="mr-3" size={24} />
-                Задать вопрос боту
+                <Icon name="MessageCircle" className="mr-2 flex-shrink-0" size={20} />
+                <span className="text-center">Задать вопрос</span>
               </Button>
             </div>
           </div>
@@ -778,11 +778,11 @@ export default function Index() {
                     <div>
                       <Button 
                         size="lg"
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
+                        className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-8 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-glow"
                         onClick={() => window.open('https://t.me/iimoi_bot', '_blank')}
                       >
-                        <Icon name="MessageCircle" className="mr-2" size={20} />
-                        Начать использовать
+                        <Icon name="MessageCircle" className="mr-2 flex-shrink-0" size={18} />
+                        <span className="text-center">Начать</span>
                       </Button>
                     </div>
                   </div>
