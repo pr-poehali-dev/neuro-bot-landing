@@ -1,7 +1,33 @@
+User-agent: *
+Allow: /
+
+# Запретить индексацию служебных файлов
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json
+Disallow: /*.ts
+Disallow: /*.tsx
+Disallow: /*.js.map
+Disallow: /vite.config.*
+Disallow: /package*.json
+Disallow: /tsconfig.*
+
+# Разрешить важные файлы для SEO
+Allow: /favicon.ico
+Allow: /sitemap.xml
+Allow: /*.css
+Allow: /*.js
+Allow: /images/
+Allow: /assets/
+
+# Основные поисковики
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
 Allow: /
 
 User-agent: Twitterbot
@@ -10,5 +36,8 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Указать sitemap
+Sitemap: https://антошкабот.рф/sitemap.xml
+
+# Время задержки для ботов (в секундах)
+Crawl-delay: 1
